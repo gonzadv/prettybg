@@ -1,0 +1,16 @@
+{
+  "name": "proyectodeprueba",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "purge": "purgecss --css css/custom.css --content index.html , paginas/contacto.html , paginas/sucursales.html , paginas/galeria.html , paginas/nosotros.html --output css/redu.css"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "animate.css": "^4.1.1",
+    "bootstrap": "^5.0.2"
+  }
+}

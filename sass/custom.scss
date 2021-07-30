@@ -1,0 +1,662 @@
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+
+$white: white;
+$gray-900: white;
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    font-family: 'roboto';
+}
+
+.menu {
+    margin: 15px 0px 0px 0px;
+}
+
+.menu ul {
+    list-style: none;
+}
+
+.menu li {
+    display: inline-block;
+    padding: 10px;
+}
+
+.menu a {
+    text-transform: uppercase;
+    text-decoration: none;
+    text-shadow: 1px 3px 4px rgb(0, 0, 0);
+    box-shadow: 2px 2px 2px rgba(179, 179, 179, 0.5);
+    font-size: 18px;
+    font-weight: bold;
+    background-image: linear-gradient(rgb(29, 124, 37), rgb(33, 100, 27));
+    color: rgb(255, 255, 255);
+    border-radius: 12px;
+    padding: 10px;
+    letter-spacing: 2px;
+}
+
+a:hover {
+    background-image: linear-gradient(rgb(71, 112, 53), rgb(190, 190, 190));
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 3px 4px rgb(70, 70, 70);
+    box-shadow: 0px 0px 10px 0px rgba(255, 255, 255, .5);
+}
+
+.fondoMenu {
+    background-image: url(../multimedia/h2-min.jpg);
+    background-position: center center;
+}
+
+figure {
+    margin: 0 auto;
+}
+
+/*  ----  Inicia estilos Menu / todas las secciones ----  */
+
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    height: 280px;
+    margin: 30px;
+    background-image: url(../multimedia/superportada-min.png);
+    background-position: center;
+    background-size: 2200px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 15px 0px rgba(134, 133, 133, 0.5);
+}
+
+.header h1 {
+    font-family: 'Bebas Neue', cursive;
+    color: rgb(255, 15, 15);
+    background-color: rgba(2, 2, 2, 0.9);
+    font-size: 80px;
+    text-shadow: 1px 3px 4px rgb(255, 255, 255);
+    border-radius: 20px;
+    padding: 15px;
+    margin: 30px;
+    animation-duration: 3s;
+    animation-name: aparecer;
+}
+
+header ul li {
+    padding: 8px;
+}
+
+
+.header span {
+    color: rgb(60, 255, 0);
+    text-shadow: 1px 3px 4px rgb(85, 85, 85);
+}
+
+/*  ----  Finaliza Menu / todas las secciones ----  */
+
+
+/* --- Inicia contenido de inicio --- */
+
+.h2Inicio {
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+}
+
+.h3Inicio {
+    display: flex;
+    justify-content: center;
+    font-size: 25px;
+    font-family: Century Gothic, CenturyGothic, AppleGothic, sans-serif;
+    border-radius: 15px;
+    background-color: rgb(17, 27, 39);
+}
+
+/* Inicia TABLA */
+.tabla-index {
+    display: flex;
+    flex-direction: column;
+    margin: 30px 100px 30px 100px;
+    padding: 10px;
+    text-align: center;
+    font-size: 15px;
+}
+
+.tabla-c1 {
+    background-color: rgba(0, 0, 0, 0.6);
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-shadow: 1px 2px 3px rgb(0, 0, 0);
+}
+
+
+table {
+    background-image: url(../multimedia/portada3-min.jpg);
+    background-position: 50% 70%;
+    background-size: cover;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-shadow: 1px 2px 3px rgb(0, 0, 0);
+}
+
+td:hover {
+    background-color: rgba(114, 114, 114, .6);
+}
+
+td {
+    padding: 10px;
+    background-color: rgba(0, 0, 0, .6);
+}
+
+th {
+    padding: 10px 5px 10px 5px;
+    font-size: 25px;
+    letter-spacing: 2px;
+    background-color: rgba(206, 0, 0, 0.3);
+}
+
+
+/* Finaliza TABLA */
+
+/* Estilos article*/
+
+article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 15px;
+    padding: 10px;
+    margin: 10px;
+}
+
+article h2 {
+    padding: 10px;
+}
+
+/* --- Finaliza contenido de inicio --- */
+
+/* Estilos Nosotros */
+.mainNosotros {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    animation-name: aparecer;
+    animation-duration: 3s;
+}
+
+.mainNosotros h2 {
+    font-size: 45px;
+    padding: 20px;
+    text-shadow: 1px 2px 3px rgb(114, 114, 114);
+}
+
+.mainNosotros p {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    background-image: url(../multimedia/foto2-min.png);
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0px 0px 15px 0px rgba(68, 68, 68, 0.8);
+    text-shadow: 2px 2px 2px rgb(0, 0, 0);
+    padding: 30px;
+    margin: 30px;
+    width: 700px;
+    height: 550px;
+    font-size: 20px;
+    border-radius: 20px;
+    border: solid 1px rgb(129, 129, 129);
+}
+
+.fondoP {
+    background-color: rgba(0, 0, 0, .9);
+    border-radius: 20px;
+    padding: 10px 10px 10px 10px;
+}
+
+div h2 {
+    position: relative;
+    float: left;
+    color: #fff;
+    font-size: 2.5em;
+}
+
+div h2 span {
+    position: absolute;
+    right: 0;
+    width: 0;
+    background-color: rgb(0, 0, 0);
+    border-left: 1px solid rgb(255, 255, 255);
+    animation: escribir 4s steps(30) infinite alternate;
+}
+
+/* Estilos Sucursales */
+
+main h2 {
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    margin-bottom: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+section p {
+    font-size: 25px;
+    padding-right: 50px;
+    border: 15px;
+}
+
+.ubicacionTrans {
+    height: 150px;
+    width: 150px;
+    transition: all 2s;
+}
+
+.ubicacionTrans:hover {
+    height: 500px;
+    width: 500px;
+}
+
+.ubicacionFondo {
+    border-radius: 15px;
+}
+
+.ubicacion {
+    margin: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.fondoUbi {
+    background-image: linear-gradient(black, rgb(53, 53, 53));
+    padding: 30px;
+}
+
+.sucursales {
+    text-align: center;
+    margin: 30px;
+}
+
+.fondoSucur {
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+    font-weight: bold;
+}
+
+.fondoSuc {
+    background-image: url(../multimedia/fondo.jpg);
+    border: solid rgb(119, 119, 119);
+    border-radius: 15px;
+    width: 500px;
+    margin: 0 auto;
+    margin-bottom: 40px;
+}
+
+/* Estilos galeria */
+
+section h2 {
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    padding-bottom: 30px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+/*Estilos Contacto */
+
+.contacto {
+    display: flex;
+    justify-content: center;
+}
+
+main p {
+    padding-top: 20px;
+    margin: 30px;
+}
+
+main div {
+    padding: 5px;
+}
+
+input {
+    padding: 5px;
+}
+
+
+fieldset {
+    color: rgb(255, 255, 255);
+    margin: 40px;
+    padding: 30px;
+    border: solid;
+    text-align: center;
+    background-color: rgb(17, 27, 39);
+    animation-duration: 4s;
+    animation-name: aparecer;
+    border-radius: 15px;
+}
+
+form {
+    margin: 30px;
+    width: 500px;
+    height: 500px;
+}
+
+.contact {
+    margin: 17px;
+    font-size: 15px;
+    padding: 5px 10px 5px 10px;
+}
+
+.contact:hover {
+    border: solid 0.5px;
+    background-color: rgb(46, 101, 173);
+}
+
+/* Estilos footer */
+
+.redesContenedor {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    background-color: rgb(11, 13, 24);
+}
+
+.redesContenedor ul li {
+    align-items: center;
+    display: inline-block;
+    margin: 20px 5px 5px 5px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+}
+
+.redesContenedor ul li a {
+    display: block;
+    padding: 0 10px;
+    background-image: linear-gradient(rgb(87, 85, 85), black);
+    color: rgb(255, 255, 255);
+    line-height: 50px;
+    font-size: 30px;
+    box-shadow: 0 3px 5px 0px rgba(58, 58, 58, 0.5);
+    border-radius: 15px;
+    text-decoration: none;
+}
+
+.redesContenedor ul:hover a {
+    filter: blur(2px);
+}
+
+.redesContenedor ul li a:hover {
+    transform: translateY(-8px) scale(1.20);
+    box-shadow: 0 5px 5px 0px rgba(58, 58, 58, 0.5);
+    filter: none;
+}
+
+.icon-twitter:hover {
+    background: #44a1e9;
+}
+
+.icon-facebook2:hover {
+    background: #2750aa;
+}
+
+.icon-instagram:hover {
+    background-image: linear-gradient(orange, red, rgb(87, 6, 141));
+}
+
+.icon-youtube:hover {
+    background: red;
+}
+
+/* Animaciones */
+
+@keyframes aparecer {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes escribir {
+    from {
+        width: 100%
+    }
+
+    to {
+        width: 0
+    }
+}
+
+/* Media Queries */
+
+/* -------- Smartphones -------- */
+
+@media (max-width: 414px) {
+
+    .menu {
+        display: flex;
+        flex-direction: column;
+        margin: 15px 127% 10px 50%;
+        text-align: left;
+    }
+
+    .menu li {
+        padding: 6px;
+    }
+
+    .menu a {
+        font-size: 15px;
+        padding: 5px;
+    }
+
+    .fondoMenu {
+        background-image: url(../multimedia/h2-min.jpg);
+        background-position: center center;
+    }
+
+    figure {
+        height: 50px;
+    }
+
+    .colorBtn {
+        background-color: rgba(29, 28, 28, .9);
+        font-size: 20px;
+        color: white;
+        margin: 5px;
+    }
+
+    .header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        height: auto;
+        margin: 20px;
+        background-image: url(../multimedia/h4-min.jpg);
+        background-position: 50% 50%;
+        background-size: cover;
+        border-radius: 20px;
+        box-shadow: 0px 0px 15px 0px rgba(134, 133, 133, 0.5);
+    }
+
+    .header h1 {
+        font-family: 'Bebas Neue', cursive;
+        font-size: 15px;
+        color: rgb(255, 15, 15);
+        background-color: rgba(2, 2, 2, 0.9);
+        text-shadow: 1px 2px 2px rgb(192, 192, 192);
+        border-radius: 20px;
+        margin: 15px;
+        animation-duration: 3s;
+        animation-name: aparecer;
+    }
+
+    .header span {
+        font-size: 30px;
+        color: rgb(60, 255, 0);
+        text-shadow: 1px 3px 4px rgb(85, 85, 85);
+    }
+
+    .h2Inicio {
+        margin-top: 30px;
+    }
+
+    .h3Inicio {
+        margin: 20px 20px 0px 20px;
+    }
+
+    .mediaI {
+        width: 300px;
+        height: 300px;
+    }
+
+    .tabla-index {
+        margin: 5px;
+        padding: 0px;
+        font-size: 10px;
+    }
+
+    .tabla-c1 {
+        background-color: rgba(0, 0, 0, 0.6);
+        color: rgb(255, 255, 255);
+        text-shadow: 1px 2px 3px rgb(0, 0, 0);
+    }
+
+    table {
+        margin-top: 30px;
+        color: rgb(255, 255, 255);
+        font-weight: bold;
+        text-shadow: 1px 2px 3px rgb(0, 0, 0);
+    }
+
+    td {
+        padding: 5px;
+        background-color: rgb(63, 63, 63);
+        font-size: 15px;
+    }
+
+    th {
+        padding: 5px;
+        font-size: 15px;
+        letter-spacing: 0px;
+        background-color: rgb(80, 33, 33);
+    }
+
+    .mainNosotros h2 {
+        font-size: 30px;
+        padding: 20px;
+        text-shadow: 1px 2px 3px rgb(114, 114, 114);
+    }
+
+    .mainNosotros p {
+        text-align: center;
+        display: flex;
+        background-image: none;
+        text-shadow: 2px 2px 2px rgb(0, 0, 0);
+        width: 350px;
+        height: 500px;
+        font-size: 15px;
+    }
+
+    div h2 {
+        text-align: center;
+    }
+
+    div h2 span {
+        display: none;
+    }
+
+    section h2 {
+        font-size: 25px;
+        text-align: center;
+        padding-top: 25px;
+        padding-bottom: 25px;
+    }
+
+    img {
+        height: 200px;
+    }
+
+    .fondoSuc {
+        background-image: url(../multimedia/fondo.jpg);
+        border: solid rgb(119, 119, 119);
+        border-radius: 15px;
+        width: 350px;
+        margin: 0 auto;
+        margin-bottom: 40px;
+    }
+
+    .redesContenedor ul li {
+        align-items: center;
+        display: inline-block;
+        margin: 15px 0px 5px 0px;
+        width: 40px;
+        text-align: center;
+    }
+
+    .redesContenedor ul li a {
+        display: flex;
+        justify-content: center;
+        background-image: none;
+        color: rgb(255, 255, 255);
+        line-height: 0px;
+        font-size: 30px;
+        box-shadow: none;
+        margin: 20px 15px 0px 0px;
+    }
+}
+
+
+/* -------- Ipad's -------- */
+
+@media (max-width: 1024px) {
+
+    .header h1 {
+        font-size: 50px;
+        text-align: center;
+    }
+
+    .h2Inicio {
+        font-size: 45px;
+        text-align: center;
+    }
+
+    .h3Inicio {
+        font-size: 30px;
+        text-align: center;
+        padding: 10px;
+    }
+}
+
+table {
+    font-size: 25px;
+}
+
+@media (max-width: 992px) {
+    .fondoMenu {
+        background-image: url(../multimedia/h2-min.jpg);
+        background-position: center center;
+    }
+
+    .colorBtn {
+        background-color: rgba(29, 28, 28, .9);
+        font-size: 20px;
+        color: white;
+        margin: 5px;
+    }
+}
